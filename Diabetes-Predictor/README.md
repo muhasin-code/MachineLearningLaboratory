@@ -1,4 +1,5 @@
-# 🩺 Diabetes Prediction Using Random Forest
+# **Diabetes Prediction Using Random Forest**
+
 
 A complete machine learning project that predicts whether a patient is diabetic based on clinical measurements.  
 This project includes full data preprocessing, exploratory data analysis (EDA), model training, hyperparameter tuning, and evaluation.
@@ -86,3 +87,81 @@ We use **RandomForestClassifier** with iterative tuning:
   'min_samples_leaf': 2,
   'class_weight': 'balanced'
 }
+```
+
+---
+
+## 🧪 Final Model Performance
+
+| Metric        | Score |
+| ------------- | ----- |
+| **Accuracy**  | 0.76  |
+| **Precision** | 0.63  |
+| **Recall**    | 0.74  |
+| **F1 Score**  | 0.68  |
+
+### Confusion Matrix
+
+```
+[[77 23]
+ [14 40]]
+```
+
+The model focuses on **recall**, as missing a diabetic patient is more dangerous than a false alarm.
+
+---
+
+## 🔍 Feature Importance
+
+| Feature                  | Importance |
+| ------------------------ | ---------- |
+| Glucose                  | 0.327      |
+| BMI                      | 0.179      |
+| Age                      | 0.137      |
+| DiabetesPedigreeFunction | 0.102      |
+| Insulin                  | 0.064      |
+| Pregnancies              | 0.064      |
+| SkinThickness            | 0.064      |
+| BloodPressure            | 0.062      |
+
+**Glucose** is the most influential feature, which aligns with clinical expectations.
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Run the Notebook
+
+Open `diabetes_prediction.ipynb` in Jupyter or Google Colab.
+
+### 3. (Optional) Run the Model as a Web App
+
+A Streamlit or Flask deployment can be added on request.
+
+---
+
+## 📌 Future Enhancements
+
+* Add SHAP/LIME explainability
+* Deploy using Streamlit
+* Build a REST API using Flask
+* Add external validation datasets
+* Use advanced models (XGBoost, LightGBM)
+
+---
+
+## 👨‍💻 Author
+
+**Muhammed Muhasin K**
+
+---
+
+## 📜 License
+
+This project is open-source under the MIT License.
