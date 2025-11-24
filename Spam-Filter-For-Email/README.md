@@ -1,4 +1,4 @@
-# 📄 **README.md — Spam Detection using Decision Trees (UCI Spambase)**
+# 📄 **Spam Detection using Decision Trees (UCI Spambase)**
 
 A complete Machine Learning project where we build, tune, evaluate, and interpret a **Decision Tree Classifier** to detect spam emails using the popular **UCI Spambase dataset**.  
 This project walks through the entire ML pipeline, emphasizing understanding, tuning, and interpreting Decision Trees for real-world usage.
